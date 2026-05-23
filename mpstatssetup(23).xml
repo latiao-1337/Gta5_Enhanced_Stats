@@ -1,0 +1,43 @@
+<StatsSetup version="1">
+  <stats>
+	
+	<!-- WEAPONS -->
+    <stat Name="MACHETE_KILLS"           	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed with weapon" />
+    <stat Name="MACHETE_DEATHS"          	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by weapon" />
+    <stat Name="MACHETE_HITS"            	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 hit with weapon" />
+    <stat Name="MACHETE_HELDTIME"        	Type="u32"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time mp char 0 held weapon (MS)" />
+    <stat Name="MACHETE_DB_HELDTIME"     	Type="u32"  SaveCategory="1" Default="0" online="true" profile="false" FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time char0 held driveby weapon (MS)" />
+	<stat Name="MACHETE_FM_AMMO_BOUGHT"  	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+    <stat Name="MACHETE_FM_AMMO_CURRENT" 	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+	<stat Name="MACHETE_ENEMY_KILLS"     	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of enemies killed with weapon (S)" />
+	<stat Name="MACHETE_IN_POSSESSION"   	Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                  
+	<stat Name="MACHETE_AQUIRED_AS_GIFT"   	Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                  
+	
+    <stat Name="MCHPIST_KILLS"           	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed with weapon" />
+    <stat Name="MCHPIST_DEATHS"          	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by weapon" />
+    <stat Name="MCHPIST_SHOTS"           	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 fired weapon" />
+    <stat Name="MCHPIST_HITS"            	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 hit with weapon" />
+    <stat Name="MCHPIST_HEADSHOTS"       	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by headshot with weapon" />
+    <stat Name="MCHPIST_HELDTIME"        	Type="u32"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time mp char 0 held weapon (MS)" />
+    <stat Name="MCHPIST_DB_HELDTIME"     	Type="u32"  SaveCategory="1" Default="0" online="true" profile="false" FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time char0 held driveby weapon (MS)" />
+	<stat Name="MCHPIST_FM_AMMO_BOUGHT"  	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+    <stat Name="MCHPIST_FM_AMMO_CURRENT" 	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+	<stat Name="MCHPIST_ENEMY_KILLS"     	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of enemies killed with weapon (S)" />
+	<stat Name="MCHPIST_IN_POSSESSION"   	Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                  
+	<stat Name="MCHPIST_AQUIRED_AS_GIFT"	Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                                    
+	
+	<stat Name="SHOPFM_CARMOD_SUPERMOD"		Type="int"  SaveCategory="1" online="true" profile="true" ServerAuthoritative="true"  FlushPriority="15" Owner="script" characterStat="true" Comment="MP Char 0 - Shop Data" />
+	<stat Name="LOW_FLOW_CURRENT_PROG"      Type="int"  SaveCategory="0" online="true" profile="true"  ServerAuthoritative="true"  FlushPriority="15"   Owner="script" characterStat="true"  Default="-1" Comment="Current progress in low rider" />
+		
+	<stat Name="PIM_JOB_HIDE_HELP_COUNTER"  Type="int"     SaveCategory="1"  online="true"  profile="false" Owner="script"  characterStat="true"    Comment="counter to show help text for jobs" />
+	<stat Name="LAST_READ_EMAIL_POSIX"      Type="int"     SaveCategory="1"  online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="cellphone email use in GTAO " />
+	<stat Name="LOW_FLOW_CURRENT_CALL"      Type="int"     SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true"  FlushPriority="15"   Owner="script" 	characterStat="true"  Comment="low rider phone call progression " />
+	<stat Name="LOWRIDER_RACE_HELP"         Type="int"     SaveCategory="1"  online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="low rider race tut intro help" />
+	<stat Name="HALLOWEEN_LOG_HELP"         Type="bool"    SaveCategory="1"  online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Halloween help text" />
+	<stat Name="HALLOWEEN_HELP"         	Type="int"     SaveCategory="1"  online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Halloween help text" />
+	
+	<stat Name="LOWRIDER_HELP_BITSET"       Type="int"     SaveCategory="1"  online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Halloween help text" />
+	
+	
+	</stats>
+</StatsSetup>

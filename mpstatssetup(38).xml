@@ -1,0 +1,142 @@
+<StatsSetup version="1">
+    <stats>
+	
+	<!-- Pilot School Stats -->
+	<stat Name="PILOT_ELAPSEDTIME_0"			 Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTELAPSEDTIME_0"         Type ="float" SaveCategory="1"   Default="-1.0"   	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTLANDDISTANCE_0"        Type ="float" SaveCategory="1"   Default="-1.0"   	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LANDINGDISTANCE_0"         Type ="float" SaveCategory="1"   Default="-1.0"   	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_MULTIPLIER_0"              Type ="float" SaveCategory="1"   Default="1.0"   	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_CHECKPOINTCOUNT_0"         Type ="int"   SaveCategory="1"   Default="-1"   	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_FORMATIONTIMER_0"          Type ="float" SaveCategory="1"   Default="-1.0"   	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_ASPASSEDLESSON_0"          Type ="bool"  SaveCategory="1"   Default="false"   online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_MEDAL_0"            Type ="int"   SaveCategory="1"   Default="-0"   	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_LASTMEDAL_0"        Type ="int"   SaveCategory="1"   Default="0"   	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	
+	<stat Name="PILOT_ELAPSEDTIME_1"			 Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTELAPSEDTIME_1"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTLANDDISTANCE_1"        Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LANDINGDISTANCE_1"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_MULTIPLIER_1"              Type ="float" SaveCategory="1"   Default="1.0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_CHECKPOINTCOUNT_1"         Type ="int"   SaveCategory="1"   Default="-1"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_FORMATIONTIMER_1"          Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_ASPASSEDLESSON_1"          Type ="bool"  SaveCategory="1"   Default="false"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_MEDAL_1"            Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_LASTMEDAL_1"        Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	
+	<stat Name="PILOT_ELAPSEDTIME_2"			 Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTELAPSEDTIME_2"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTLANDDISTANCE_2"        Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LANDINGDISTANCE_2"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_MULTIPLIER_2"              Type ="float" SaveCategory="1"   Default="1.0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_CHECKPOINTCOUNT_2"         Type ="int"   SaveCategory="1"   Default="-1"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_FORMATIONTIMER_2"          Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_ASPASSEDLESSON_2"          Type ="bool"  SaveCategory="1"   Default="false"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_MEDAL_2"            Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_LASTMEDAL_2"        Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+		
+	<stat Name="PILOT_ELAPSEDTIME_3"			 Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTELAPSEDTIME_3"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTLANDDISTANCE_3"        Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LANDINGDISTANCE_3"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_MULTIPLIER_3"              Type ="float" SaveCategory="1"   Default="1.0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_CHECKPOINTCOUNT_3"         Type ="int"   SaveCategory="1"   Default="-1"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_FORMATIONTIMER_3"          Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_ASPASSEDLESSON_3"          Type ="bool"  SaveCategory="1"   Default="false"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_MEDAL_3"            Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_LASTMEDAL_3"        Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	
+	<stat Name="PILOT_ELAPSEDTIME_4"			 Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTELAPSEDTIME_4"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTLANDDISTANCE_4"        Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LANDINGDISTANCE_4"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_MULTIPLIER_4"              Type ="float" SaveCategory="1"   Default="1.0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_CHECKPOINTCOUNT_4"         Type ="int"   SaveCategory="1"   Default="-1"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_FORMATIONTIMER_4"          Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_ASPASSEDLESSON_4"          Type ="bool"  SaveCategory="1"   Default="false"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_MEDAL_4"            Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_LASTMEDAL_4"        Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+		
+	<stat Name="PILOT_ELAPSEDTIME_5"			 Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTELAPSEDTIME_5"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTLANDDISTANCE_5"        Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LANDINGDISTANCE_5"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_MULTIPLIER_5"              Type ="float" SaveCategory="1"   Default="1.0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_CHECKPOINTCOUNT_5"         Type ="int"   SaveCategory="1"   Default="-1"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_FORMATIONTIMER_5"          Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_ASPASSEDLESSON_5"          Type ="bool"  SaveCategory="1"   Default="false"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_MEDAL_5"            Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_LASTMEDAL_5"        Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	
+	<stat Name="PILOT_ELAPSEDTIME_6"			 Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTELAPSEDTIME_6"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTLANDDISTANCE_6"        Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LANDINGDISTANCE_6"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_MULTIPLIER_6"              Type ="float" SaveCategory="1"   Default="1.0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_CHECKPOINTCOUNT_6"         Type ="int"   SaveCategory="1"   Default="-1"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_FORMATIONTIMER_6"          Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_ASPASSEDLESSON_6"          Type ="bool"  SaveCategory="1"   Default="false"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_MEDAL_6"            Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_LASTMEDAL_6"        Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+		
+	<stat Name="PILOT_ELAPSEDTIME_7"			 Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTELAPSEDTIME_7"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTLANDDISTANCE_7"        Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LANDINGDISTANCE_7"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_MULTIPLIER_7"              Type ="float" SaveCategory="1"   Default="1.0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_CHECKPOINTCOUNT_7"         Type ="int"   SaveCategory="1"   Default="-1"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_FORMATIONTIMER_7"          Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_ASPASSEDLESSON_7"          Type ="bool"  SaveCategory="1"   Default="false"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_MEDAL_7"            Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_LASTMEDAL_7"        Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+		
+	<stat Name="PILOT_ELAPSEDTIME_8"			 Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTELAPSEDTIME_8"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTLANDDISTANCE_8"        Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LANDINGDISTANCE_8"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_MULTIPLIER_8"              Type ="float" SaveCategory="1"   Default="1.0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_CHECKPOINTCOUNT_8"         Type ="int"   SaveCategory="1"   Default="-1"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_FORMATIONTIMER_8"          Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_ASPASSEDLESSON_8"          Type ="bool"  SaveCategory="1"   Default="false"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_MEDAL_8"            Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_LASTMEDAL_8"        Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	
+	<stat Name="PILOT_ELAPSEDTIME_9"			 Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTELAPSEDTIME_9"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LASTLANDDISTANCE_9"        Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_LANDINGDISTANCE_9"         Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_MULTIPLIER_9"              Type ="float" SaveCategory="1"   Default="1.0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_CHECKPOINTCOUNT_9"         Type ="int"   SaveCategory="1"   Default="-1"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_FORMATIONTIMER_9"          Type ="float" SaveCategory="1"   Default="-1.0"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_ASPASSEDLESSON_9"          Type ="bool"  SaveCategory="1"   Default="false"	online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_MEDAL_9"            Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<stat Name="PILOT_SCHOOL_LASTMEDAL_9"        Type ="int"   SaveCategory="1"   Default="0"		online="true"  profile="false"   Owner="script" 	characterStat="true"  Comment="Pilot School Stats" />
+	<!-- New vehicle stat to uniquely identify veh -->
+	<stat Name="MPSV_OBTAINED_TIME_0"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_0 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_1"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_1 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_2"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_2 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_3"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_3 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_4"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_4 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_5"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_5 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_6"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_6 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_7"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_7 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_8"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_8 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_9"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_9 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_10"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_10 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_11"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_11 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_12"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_12 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_13"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_13 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_14"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_14 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_15"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_15 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_16"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_16 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_17"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_17 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_18"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_18 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_19"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_19 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_20"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_20 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_21"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_21 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_22"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_22 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_23"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_23 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_24"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_24 time vehicle was obtained" />
+	<stat Name="MPSV_OBTAINED_TIME_25"    Type="int"    SaveCategory="0"  online="true"  profile="true"  ServerAuthoritative="true" FlushPriority="15" Owner="script"  characterStat="true"  IsVehicle="true"  Comment="Vehicle_25 time vehicle was obtained" />
+	</stats>
+</StatsSetup>
