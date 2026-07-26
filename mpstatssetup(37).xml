@@ -1,0 +1,50 @@
+<StatsSetup version="1">
+    <stats>
+	
+	<!-- WEAPONS -->
+    <stat Name="FIREWRK_KILLS"           	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed with weapon" />
+    <stat Name="FIREWRK_DEATHS"          	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by weapon" />
+    <stat Name="FIREWRK_SHOTS"           	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 fired weapon" />
+    <stat Name="FIREWRK_HITS"            	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 hit with weapon" />
+    <stat Name="FIREWRK_HEADSHOTS"       	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by headshot with weapon" />
+    <stat Name="FIREWRK_HELDTIME"        	Type="u32"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time mp char 0 held weapon (MS)" />
+    <stat Name="FIREWRK_DB_HELDTIME"     	Type="u32"  SaveCategory="1" Default="0" online="true" profile="false" FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time char0 held driveby weapon (MS)" />
+	<stat Name="FIREWRK_FM_AMMO_BOUGHT"  	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+    <stat Name="FIREWRK_FM_AMMO_CURRENT" 	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+	<stat Name="FIREWRK_ENEMY_KILLS"     	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of enemies killed with weapon (S)" />
+	<stat Name="FIREWRK_IN_POSSESSION"   	Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                  
+	<stat Name="FIREWRK_AQUIRED_AS_GIFT"	Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                                    
+
+    <stat Name="MUSKET_KILLS"           	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed with weapon" />
+    <stat Name="MUSKET_DEATHS"          	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by weapon" />
+    <stat Name="MUSKET_SHOTS"           	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 fired weapon" />
+    <stat Name="MUSKET_HITS"            	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 hit with weapon" />
+    <stat Name="MUSKET_HEADSHOTS"       	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by headshot with weapon" />
+    <stat Name="MUSKET_HELDTIME"        	Type="u32"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time mp char 0 held weapon (MS)" />
+    <stat Name="MUSKET_DB_HELDTIME"     	Type="u32"  SaveCategory="1" Default="0" online="true" profile="false" FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time char0 held driveby weapon (MS)" />
+	<stat Name="MUSKET_FM_AMMO_BOUGHT"  	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+    <stat Name="MUSKET_FM_AMMO_CURRENT" 	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+	<stat Name="MUSKET_ENEMY_KILLS"     	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of enemies killed with weapon (S)" />
+	<stat Name="MUSKET_IN_POSSESSION"   	Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                  
+	<stat Name="MUSKET_AQUIRED_AS_GIFT"		Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                                    
+	
+	<stat Name="FIREWORK_TYPE_1_WHITE" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />                                  
+	<stat Name="FIREWORK_TYPE_1_RED" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />   
+	<stat Name="FIREWORK_TYPE_1_BLUE" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />   
+
+	<stat Name="FIREWORK_TYPE_2_WHITE" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />                                  
+	<stat Name="FIREWORK_TYPE_2_RED" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />   
+	<stat Name="FIREWORK_TYPE_2_BLUE" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />   
+
+	<stat Name="FIREWORK_TYPE_3_WHITE" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />                                  
+	<stat Name="FIREWORK_TYPE_3_RED" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />   
+	<stat Name="FIREWORK_TYPE_3_BLUE" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />   
+
+	<stat Name="FIREWORK_TYPE_4_WHITE" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />                                  
+	<stat Name="FIREWORK_TYPE_4_RED" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />   
+	<stat Name="FIREWORK_TYPE_4_BLUE" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"     Owner="script"  characterStat="true"  Comment="Fire Work Colours" />   
+
+	
+	</stats>
+</StatsSetup>
+

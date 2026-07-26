@@ -1,0 +1,344 @@
+
+<StatsSetup version="1">
+
+<!-- START OF ALL SINGLE PLAYER UI STATS -->
+
+<!--		 Setup info & examples:
+		   
+			 name	  	      - The string name of the stat value. Must match spStatsSetup.xml.
+			 type	  	      - The type of stat.  This will affect how the stat is displayed in the UI.
+	  	  	  	  	  	   .. Possible values are:
+	  	  	  	  	  	      .. Type = "float"  - Example: 0.00
+	  	  	  	  	  	      .. Type = "int"    - Example: 0
+	  	  	  	  	  	      .. Type = "time"   - Example: hh:mm:ss
+	  	  	  	  	  	      .. Type = "distance"  - Example: 0 m
+	  	  	  	  	  	      .. Type = "date"   - Example: yyyy/mm/dd
+			 visible	  	   - Indicates the visibility of the stat.
+	  	  	  	  	  .. Possible visibity options are:
+	  	  	  	  	    .. visible = "ALWAYS_VISIBLE"
+	  	  	  	  	    .. visible = "NEVER_VISIBLE"
+						.. visible = "AFTER_INCREMENT"
+						.. visible = "SPECIAL_EDITION"
+	  	  	  	  	    .. visible = "CONDITIONAL"
+	  	  	  	  	      .. conditional is to be implemented if need be.
+
+			 description	     - (Optional) field to specify a localization string.  If not specified, the game will use the name field for localization purposes.
+			 characterStat	   - (Optional) field to specify a character stat.  If not specified, the game will assume this is true.
+
+
+			EX. How to replace a number value with a string. (note: stat should be a type int on the frontend and backend)
+
+			<stat name="FIRES_EXTINGUISHED" type="int" visible="ALWAYS_VISIBLE" >
+				<ReplaceLabel minValue ="0" maxValue="99" label="RANK_SOMERANK1" />
+				<ReplaceLabel minValue ="100" maxValue="199" label="RANK_SOMERANK2" />
+				<ReplaceLabel minValue ="200" maxValue="299" label="RANK_SOMERANK3" />
+			</stat>
+
+			EX. How to display a stat as a fraction. (note: stat should be a type int on the backend)
+
+			<stat name="DISCOVERED_HIDDEN_PACKAGES"				type="fraction"		visible="ALWAYS_VISIBLE"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="50" label="50" rawNumber="true" />
+			</stat>
+			
+			EX. How to do manual stat divison using. (note: stat should be a type int on the backend)
+			The stat name is only used for name purposes but it must exist in the back end. The actual stats to have their percentages
+			calculated are the replacement label values, the label attribute being the name of that stats hash.
+			<stat name="NUM_MISC_COMPLETED"					type="checklist"	visible="ALWAYS_VISIBLE"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="1" label="NUM_MISC_COMPLETED" />
+				<ReplaceLabel minValue ="2" maxValue="3" label="NUM_MISC_AVAILABLE" />
+			</stat>
+
+-->
+
+  <stats>
+ 
+    <Category label="SP_STATS1">		<!-- Skills -->
+
+	  <stat name="SPECIAL_ABILITY_UNLOCKED"				type="bar"		visible="ALWAYS_VISIBLE" details="DTL_SPECIAL" />
+	  <stat name="STAMINA"								type="bar"		visible="ALWAYS_VISIBLE" details="DTL_STAM" />
+	  <stat name="SHOOTING_ABILITY"						type="bar"		visible="ALWAYS_VISIBLE" details="DTL_SHOOT" />
+	  <stat name="STRENGTH"								type="bar"		visible="ALWAYS_VISIBLE" details="DTL_STRENGTH" />
+	  <stat name="STEALTH_ABILITY"						type="bar"		visible="ALWAYS_VISIBLE" details="DTL_STEALTH" />
+	  <stat name="FLYING_ABILITY"						type="bar"		visible="ALWAYS_VISIBLE" details="DTL_FLYING" />
+	  <stat name="WHEELIE_ABILITY"						type="bar"		visible="ALWAYS_VISIBLE" details="DTL_DRIVING" />
+	  <stat name="LUNG_CAPACITY"						type="bar"		visible="ALWAYS_VISIBLE" details="DTL_LUNGS" />
+
+    </Category>
+
+    <Category label="SP_STATS2">   <!-- General -->
+
+	  <stat name="TOTAL_PLAYING_TIME"					type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="FIRST_PERSON_CAM_TIME"				type="time"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="MISSIONS_PASSED"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="LAST_MISSION_NAME"					type="int"		visible="ALWAYS_VISIBLE"	label="LAST_MISSION_NAME" />
+	  <stat name="NUM_HIDDEN_PACKAGES_0"				type="fraction"	visible="AFTER_INCREMENT"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="50" label="50" rawNumber="true" />
+	  </stat>
+	  <stat name="NUM_HIDDEN_PACKAGES_1"				type="fraction"	visible="AFTER_INCREMENT"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="50" label="50" rawNumber="true" />
+	  </stat>
+	  <stat name="NUM_HIDDEN_PACKAGES_2"				type="fraction"	visible="AFTER_INCREMENT"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="15" label="10" rawNumber="true" />
+	  </stat>
+	  <stat name="NUM_HIDDEN_PACKAGES_3"				type="fraction"	visible="AFTER_INCREMENT"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="30" label="30" rawNumber="true" />
+	  </stat>
+	  <stat name="NUM_HIDDEN_PACKAGES_4"				type="fraction"	visible="AFTER_INCREMENT"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="30" label="30" rawNumber="true" />
+	  </stat>
+	  <stat name="NUM_HIDDEN_PACKAGES_5"				type="fraction"	visible="AFTER_INCREMENT"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="27" label="27" rawNumber="true" />
+	  </stat>
+	  <stat name="NUM_HIDDEN_PACKAGES_6"				type="fraction"	visible="AFTER_INCREMENT"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="50" label="50" rawNumber="true" />
+	  </stat>
+	  <stat name="NUM_HIDDEN_PACKAGES_7"				type="fraction"	visible="AFTER_INCREMENT"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="20" label="20" rawNumber="true" />
+	  </stat>
+	  <stat name="NUM_DESTROYED_SIGNS_0"				type="fraction"	visible="AFTER_INCREMENT"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="15" label="15" rawNumber="true" />
+	  </stat>
+	  <stat name="MANUAL_SAVED"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="TIMES_CHEATED"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DEATHS"								type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIED_IN_EXPLOSION"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIED_IN_FALL"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIED_IN_FIRE"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIED_IN_ROAD"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIED_IN_DROWNING"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="TIME_SWIMMING"						type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_SWIMMING"						type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="TIME_UNDERWATER"						type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="TIME_WALKING"							type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_WALKING"							type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_RUNNING"							type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="LONGEST_SURVIVED_FREEFALL"			type="short_distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="TIME_IN_COVER"						type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="SP_MOST_FAVORITE_STATION"				type="namehash"	visible="ALWAYS_VISIBLE"    characterStat="false"/>
+ 	  <stat name="NO_PHOTOS_TAKEN"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="LAP_DANCED_BOUGHT"					type="int"		visible="ALWAYS_VISIBLE" />
+
+    </Category>
+
+    <Category label="SP_STATS3">  	<!-- Crimes -->
+
+	  <stat name="KILLS_COP"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="KILLS_SWAT"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NO_TIMES_WANTED_LEVEL"				type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="BUSTED"								type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="STARS_ATTAINED"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="STARS_EVADED"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="LAST_CHASE_TIME"						type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="LONGEST_CHASE_TIME"					type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="TOTAL_TIME_MAX_STARS"					type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DB_KILLS"								type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="PASS_DB_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="TIRES_POPPED_BY_GUNSHOT"				type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="HIGHEST_SKITTLES"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NUMBER_STOLEN_CARS"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NUMBER_STOLEN_BIKES"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NUMBER_STOLEN_HELIS"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NUMBER_STOLEN_PLANES"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NUMBER_STOLEN_BOATS"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NUMBER_STOLEN_QUADBIKES"				type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NUMBER_STOLEN_BICYCLES"				type="int"		visible="ALWAYS_VISIBLE" />
+      <stat name="NUMBER_STOLEN_COP_VEHICLE"			type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="KILLS_SINCE_LAST_CHECKPOINT"			type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="KILLS_SINCE_SAFEHOUSE_VISIT"			type="int"		visible="ALWAYS_VISIBLE" />
+
+    </Category>
+
+    <Category label="SP_STATS4">	  <!-- Vehicles -->
+
+	  <stat name="TIME_DRIVING_CAR"						type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_CAR"								type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="TIME_DRIVING_BIKE"					type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_BIKE"							type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="TIME_DRIVING_HELI"					type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_HELI"							type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="TIME_DRIVING_PLANE"					type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_PLANE"							type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="TIME_DRIVING_BOAT"					type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_BOAT"							type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="TIME_DRIVING_QUADBIKE"				type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_QUADBIKE"						type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="TIME_DRIVING_BICYCLE"					type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_BICYCLE"							type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="TIME_DRIVING_SUBMARINE"				type="time"		visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_SUBMARINE"						type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_AS_PASSENGER_TRAIN"				type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="DIST_AS_PASSENGER_TAXI"				type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="FASTEST_SPEED"						type="speed"	visible="ALWAYS_VISIBLE" />
+	  <stat name="TOP_SPEED_CAR"						type="carhash"	visible="ALWAYS_VISIBLE" />
+	  <stat name="LONGEST_STOPPIE_DIST"					type="short_distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="LONGEST_WHEELIE_DIST"					type="short_distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="LONGEST_DRIVE_NOCRASH"				type="distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="NUMBER_CRASHES_CARS"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NUMBER_CRASHES_BIKES"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NUMBER_CRASHES_QUADBIKES"				type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="BAILED_FROM_VEHICLE"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="FARTHEST_JUMP_DIST"					type="short_distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="HIGHEST_JUMP_REACHED"					type="short_distance"	visible="ALWAYS_VISIBLE" />
+	  <stat name="MOST_FLIPS_IN_ONE_JUMP"				type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MOST_SPINS_IN_ONE_JUMP"				type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="USJS_FOUND"							type="fraction"	visible="ALWAYS_VISIBLE"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="50" label="50" rawNumber="true" />
+	  </stat>
+	  <stat name="USJS_COMPLETED"						type="fraction"	visible="ALWAYS_VISIBLE"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="50" label="50" rawNumber="true" />
+	  </stat>
+	  <stat name="SP_UNDER_THE_BRIDGE_COUNT"			type="fraction"	visible="ALWAYS_VISIBLE"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="50" label="50" rawNumber="true" />
+	  </stat>
+	  <stat name="SP_KNIFE_FLIGHTS_COUNT"				type="fraction"	visible="ALWAYS_VISIBLE"	characterStat="false" >
+				<ReplaceLabel minValue ="0" maxValue="15" label="15" rawNumber="true" />
+	  </stat>
+	  <stat name="THROWNTHROUGH_WINDSCREEN"				type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NUMBER_NEAR_MISS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="CARS_COPS_EXPLODED"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="CARS_EXPLODED"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="BIKES_EXPLODED"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="HELIS_EXPLODED"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="PLANES_EXPLODED"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="BOATS_EXPLODED"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="QUADBIKE_EXPLODED"					type="int"		visible="ALWAYS_VISIBLE" />
+ 	  <stat name="NO_CARS_REPAIR"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="VEHICLES_SPRAYED"						type="int"		visible="ALWAYS_VISIBLE" />
+
+    </Category>
+
+	<Category label="SP_STATS5">		<!-- Cash -->
+
+	  <stat name="TOTAL_CASH_EARNED"					type="cash"		visible="ALWAYS_VISIBLE" />
+ 	  <stat name="MONEY_TOTAL_SPENT"					type="cash"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MONEY_MADE_FROM_MISSIONS"				type="cash"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MONEY_MADE_FROM_RANDOM_PEDS"			type="cash"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MONEY_PICKED_UP_ON_STREET"			type="cash"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MONEY_SPENT_IN_COP_BRIBES"			type="cash"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MONEY_SPENT_ON_HEALTHCARE"			type="cash"		visible="ALWAYS_VISIBLE" />
+  	  <stat name="MONEY_SPENT_CAR_MODS"					type="cash"		visible="ALWAYS_VISIBLE" />
+  	  <stat name="MONEY_SPENT_IN_BUYING_GUNS"			type="cash"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MONEY_SPENT_IN_CLOTHES"				type="cash"		visible="ALWAYS_VISIBLE" />
+ 	  <stat name="MONEY_SPENT_ON_TATTOOS"				type="cash"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MONEY_SPENT_ON_HAIRDOS"				type="cash"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MONEY_SPENT_IN_STRIP_CLUBS"			type="cash"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MONEY_SPENT_ON_TAXIS"					type="cash"		visible="ALWAYS_VISIBLE" />
+ 	  <stat name="MONEY_SPENT_PROPERTY"					type="cash"		visible="ALWAYS_VISIBLE" />
+	  <stat name="PROP_BOUGHT_BARHE"	   				type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_BARHE"	   				type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_BARHO"	   				type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_BARHO"	 				type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_BARPI"  					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_BARPI"	  				type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_BARTE"	   				type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_BARTE"	   				type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_CIND"	   					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_CIND"	   					type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_CINM"	   					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_CINM"	   					type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_CINV"	   					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_CINV"	   					type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_CMSH"	   					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_CMSH"	   					type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_CSCR"	   					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_CSCR"	   					type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_GOLF"	   					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_GOLF"	   					type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_SOCO"	   					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_SOCO"	   					type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_TAXI"	   					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_TAXI"	   					type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_TOWI"	   					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_TOWI"	   					type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_TRAF"	   					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_TRAF"	   					type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+	  <stat name="PROP_BOUGHT_WEED"	   					type="bool"		visible="ALWAYS_VISIBLE"	characterStat="false" />
+	  <stat name="PROP_EARNED_WEED"	   					type="cash"		visible="AFTER_INCREMENT"	characterStat="false" />
+
+    </Category>
+
+	<Category label="SP_STATS6">		<!-- Combat -->
+
+	  <stat name="SHOTS"								type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="HITS_PEDS_VEHICLES"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="WEAPON_ACCURACY"						type="percent"	visible="ALWAYS_VISIBLE" />
+	  <stat name="KILLS"								type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="HEADSHOTS"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="KILLS_ARMED"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="KILLS_IN_FREE_AIM"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="KILLS_STEALTH"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="SUCCESSFUL_COUNTERS"					type="int"		visible="ALWAYS_VISIBLE" />
+	  
+    </Category>
+
+	<Category label="SP_STATS7">  	<!-- Weapons -->
+
+	  <stat name="PISTOL_KILLS"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="CMBTPISTOL_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="PISTOL50_KILLS"						type="int"		visible="AFTER_INCREMENT" />	  
+	  <stat name="APPISTOL_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MICROSMG_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="SMG_KILLS"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="ASLTSMG_KILLS"						type="int"		visible="AFTER_INCREMENT" />
+	  <stat name="ASLTRIFLE_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="CRBNRIFLE_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="ADVRIFLE_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MG_KILLS"								type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="CMBTMG_KILLS"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="PUMP_KILLS"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="SAWNOFF_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="ASLTSHTGN_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="BULLPUP_KILLS"						type="int"		visible="AFTER_INCREMENT" />
+	  <stat name="SNIPERRFL_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="HVYSNIPER_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="GRNLAUNCH_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="RPG_KILLS"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MINIGUNS_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="GRENADE_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="SMKGRENADE_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="STKYBMB_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="MOLOTOV_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="KNIFE_KILLS"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="NIGHTSTICK_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="CROWBAR_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="HAMMER_KILLS"							type="int"		visible="AFTER_INCREMENT" />
+	  <stat name="BAT_KILLS"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="GCLUB_KILLS"							type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="UNARMED_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="STUNGUN_KILLS"						type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="RHINO_ROCKET_KILLS"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="BUZZARD_BULLET_KILLS"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="BUZZARD_ROCKET_KILLS"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="LAZER_BULLET_KILLS"					type="int"		visible="ALWAYS_VISIBLE" />
+	  <stat name="LAZER_ROCKET_KILLS"					type="int"		visible="ALWAYS_VISIBLE" />
+
+    </Category>
+
+	<Category label="SP_STATS8">  	<!-- 100% Checklist -->
+
+	  <stat name="NUM_MISSIONS_COMPLETED"				type="checklist"	visible="ALWAYS_VISIBLE"	characterStat="false">
+		  <ReplaceLabel minValue ="0" maxValue="1" label="NUM_MISSIONS_COMPLETED" />
+		  <ReplaceLabel minValue ="2" maxValue="3" label="NUM_MISSIONS_AVAILABLE" />
+	  </stat>
+	  <stat name="NUM_MINIGAMES_COMPLETED"				type="checklist"	visible="ALWAYS_VISIBLE"	characterStat="false" >
+		  <ReplaceLabel minValue ="0" maxValue="1" label="NUM_MINIGAMES_COMPLETED" />
+		  <ReplaceLabel minValue ="2" maxValue="3" label="NUM_MINIGAMES_AVAILABLE" />
+	  </stat>
+	  <stat name="NUM_RNDPEOPLE_COMPLETED"				type="checklist"	visible="ALWAYS_VISIBLE"	characterStat="false" >
+		  <ReplaceLabel minValue ="0" maxValue="1" label="NUM_RNDPEOPLE_COMPLETED" />
+		  <ReplaceLabel minValue ="2" maxValue="3" label="NUM_RNDPEOPLE_AVAILABLE" />
+	  </stat>
+	  <stat name="NUM_RNDEVENTS_COMPLETED"				type="checklist"	visible="ALWAYS_VISIBLE"	characterStat="false" >
+		  <ReplaceLabel minValue ="0" maxValue="1" label="NUM_RNDEVENTS_COMPLETED" />
+		  <ReplaceLabel minValue ="2" maxValue="3" label="NUM_RNDEVENTS_AVAILABLE" />
+	  </stat>
+	  <stat name="NUM_MISC_COMPLETED"					type="checklist"	visible="ALWAYS_VISIBLE"	characterStat="false" >
+		  <ReplaceLabel minValue ="0" maxValue="1" label="NUM_MISC_COMPLETED" />
+		  <ReplaceLabel minValue ="2" maxValue="3" label="NUM_MISC_AVAILABLE" />
+	  </stat>
+
+    </Category>
+
+  </stats>
+
+</StatsSetup>

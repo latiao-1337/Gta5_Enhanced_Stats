@@ -1,0 +1,98 @@
+<StatsSetup version="1">
+  <stats>
+	
+	<stat Name="GANG_PAY_GRADE"   				Type="int"     SaveCategory="0"  Default="-1"   online="true"   profile="true"  FlushPriority="15"  ServerAuthoritative="true" Owner="script" characterStat="true" Comment="store gang pay grade" />	
+	<stat Name="GB_SYSTEM_HELP_TEXT"   			Type="int"     SaveCategory="0"  Default="-1"   online="true"  profile="false" Owner="script" characterStat="true" Comment="store gang pay grade" />	
+    <stat Name="GB_SYSTEM_HELP_TEXT2"   		Type="int"     SaveCategory="0"  Default="-1"   online="true"  profile="false" Owner="script" characterStat="true" Comment="store gang pay grade" />	
+
+	<!-- Apartment inventory stats -->
+	<stat Name="YACHT_PROPERTY"      			Type="int"     SaveCategory="0"  Default="0"   online="true"  profile="true"  FlushPriority="15"  ServerAuthoritative="true"   UserData="STAT_FLAG_NEVER_SHOW"  Owner="script" characterStat="true" Comment="Stores yacht player owns" />
+	<stat Name="BOSS_END_TIME"					Type="int"	   SaveCategory="0"  online="true"  profile="true"  FlushPriority="15"  ServerAuthoritative="true"  Owner="script" characterStat="true"  Comment="Magnate stats"  Default="-1"/>
+	<stat Name="USERID_BOSS"					Type="userid"  SaveCategory="0"  online="true"  profile="true"  FlushPriority="15"  ServerAuthoritative="true"  Owner="script" characterStat="true"  Comment="Magnate stats" />
+	<stat Name="YACHTPREFERREDAREA"				Type="int"	   SaveCategory="0"  online="true"  profile="false"  Owner="script" characterStat="true"  Comment="Yacht Position" />
+	<stat Name="PEGASUSYACHTVEHICLE"			Type="int"	   SaveCategory="0"  online="true"  profile="false"  Owner="script" characterStat="true"  Comment="Implement Pegasus spawns for helipad and jetski bay on yacht" />
+	<stat Name="PAYTIER_GOON1"            		Type="int"     SaveCategory="0"  online="true"  profile="false"  Owner="script" characterStat="true"  Comment="tiered hourly goon payments stats" />
+	<stat Name="PAYTIER_GOON2"            		Type="int"     SaveCategory="0"  online="true"  profile="false"  Owner="script" characterStat="true"  Comment="tiered hourly goon payments stats" />
+	<stat Name="PAYTIER_GOON3"             		Type="int"     SaveCategory="0"  online="true"  profile="false"  Owner="script" characterStat="true"  Comment="tiered hourly goon payments stats" />	
+	<stat Name="SPAWN_NEAR_BOSS"             	Type="bool"    SaveCategory="0"  online="true"  profile="false"  Owner="script" characterStat="true"  Comment="Option to spawn near boss" />	
+	
+	
+	<!-- WEAPONS -->
+    <stat Name="REVOLVER_KILLS"           		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed with weapon" />
+    <stat Name="REVOLVER_DEATHS"          		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by weapon" />
+    <stat Name="REVOLVER_SHOTS"           		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 fired weapon" />
+    <stat Name="REVOLVER_HITS"            		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 hit with weapon" />
+    <stat Name="REVOLVER_HEADSHOTS"       		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by headshot with weapon" />
+    <stat Name="REVOLVER_HELDTIME"        		Type="u32"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time mp char 0 held weapon (MS)" />
+    <stat Name="REVOLVER_DB_HELDTIME"     		Type="u32"  SaveCategory="1" Default="0" online="true" profile="false" FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time char0 held driveby weapon (MS)" />
+	<stat Name="REVOLVER_FM_AMMO_BOUGHT"  		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+    <stat Name="REVOLVER_FM_AMMO_CURRENT" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+	<stat Name="REVOLVER_ENEMY_KILLS"     		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of enemies killed with weapon (S)" />
+	<stat Name="REVOLVER_IN_POSSESSION"   		Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                  
+	<stat Name="REVOLVER_AQUIRED_AS_GIFT"		Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                                    
+	
+    <stat Name="SWBLADE_KILLS"           		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed with weapon" />
+    <stat Name="SWBLADE_DEATHS"          		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by weapon" />
+    <stat Name="SWBLADE_HITS"            		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 hit with weapon" />
+    <stat Name="SWBLADE_HELDTIME"        		Type="u32"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time mp char 0 held weapon (MS)" />
+	<stat Name="SWBLADE_FM_AMMO_BOUGHT"  		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+    <stat Name="SWBLADE_FM_AMMO_CURRENT" 		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+	<stat Name="SWBLADE_ENEMY_KILLS"     		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of enemies killed with weapon (S)" />
+	<stat Name="SWBLADE_IN_POSSESSION"   		Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                  
+	<stat Name="SWBLADE_AQUIRED_AS_GIFT"		Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                                    
+
+	<stat Name="LIMO2_TURR_KILLS"         		Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  	FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed with weapon" />
+    <stat Name="LIMO2_TURR_DEATHS"        		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by weapon" />
+    <stat Name="LIMO2_TURR_SHOTS"         		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 fired weapon" />
+    <stat Name="LIMO2_TURR_HITS"          		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 hit with weapon" />
+    <stat Name="LIMO2_TURR_HEADSHOTS"       	Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by headshot with weapon" />
+    <stat Name="LIMO2_TURR_HELDTIME"      		Type="u32"  SaveCategory="1" Default="0" online="true" profile="true"  	FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time mp char 0 held weapon (MS)" />
+	<stat Name="LIMO2_TURR_ENEMY_KILLS"   		Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of enemies killed with weapon (S)" />	
+
+	<stat Name="VALKYRI2_TURR_KILLS"         	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  	FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed with weapon" />
+    <stat Name="VALKYRI2_TURR_DEATHS"        	Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by weapon" />
+    <stat Name="VALKYRI2_TURR_SHOTS"         	Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 fired weapon" />
+    <stat Name="VALKYRI2_TURR_HITS"          	Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 hit with weapon" />
+    <stat Name="VALKYRI2_TURR_HEADSHOTS"        Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by headshot with weapon" />
+    <stat Name="VALKYRI2_TURR_HELDTIME"      	Type="u32"  SaveCategory="1" Default="0" online="true" profile="true"  	FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time mp char 0 held weapon (MS)" />
+	<stat Name="VALKYRI2_TURR_ENEMY_KILLS"   	Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of enemies killed with weapon (S)" />	
+	
+	<stat Name="YACHT_NAME"             		Type="string" SaveCategory="0"  online="true"  profile="false"  Owner="script" characterStat="true"  Comment="Stats for storing the flag, name, colour, base and mod of the players purchased yacht" />	
+
+
+	<stat Name="IS_CHAR_A_BOSS"             	Type="bool"   SaveCategory="0" online="true"  profile="true"   Owner="script" characterStat="true"  Comment="Stats for storing the flag, name, colour, base and mod of the players purchased yacht" />	
+	<stat Name="GB_FM_TIME"             		Type="int"    SaveCategory="0" Default="0" online="true"  profile="true"  Owner="script" characterStat="true"  Comment="Stats for storing the flag, name, colour, base and mod of the players purchased yacht" />	
+	<stat Name="YACHT_DEFENCE_SETTING"          Type="int"    SaveCategory="0" Default="0" online="true"  profile="true"  Owner="script" characterStat="true"  Comment="Stats for storing the flag, name, colour, base and mod of the players purchased yacht" />	
+	
+	<stat Name="YACHT_VEHICLE_ACCESS"           Type="int"     SaveCategory="1"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment="Who can access the players yacht vehicles" />
+	<stat Name="BLOCK_GANG_BOSS_WORK"          	Type="bool"   SaveCategory="0" online="true"  profile="false"   Owner="script" characterStat="true"  Comment="Block Gang boss work" />	
+
+	<stat Name="GB_TOGGLE_FRIENDLY_FIRE"        Type="bool"   SaveCategory="0"   online="true"  profile="false"   Owner="script" characterStat="true"  Comment="To know if GB has friendly fire on or off" />	
+	<stat Name="TIMES_PREV_PLAY_AS_BOSS"        Type="int"    SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment="Times previously played as boss" />
+	<stat Name="GB_GANG_NAME"     			  	Type="string" SaveCategory="0"   online="true"  profile="false"    Owner="script"  characterStat="true"  Comment="players gang name" />
+	<stat Name="GBTELTIMESPLAYEDGOONPREV"		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment=	"Boss/ Goon Telemetry: Times Played as Goon previously 			" />
+	<stat Name="GBTELNOFM_SESSIONS_ENT"    		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment=	"Boss/ Goon Telemetry: Number of  freemode sessions entered       " />
+	<stat Name="GBTELNOJOB_SESSIONS_ENT"   		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment=	"Boss/ Goon Telemetry: Number of Job sessions entered             " />
+	<stat Name="GBTELNOGOON_INVITES_ACP"   		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment=	"Boss/ Goon Telemetry: Number of Goon Invites Accepted            " />
+	<stat Name="GBTELNOGOON_QUIT"          		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment=	"Boss/ Goon Telemetry: Number of Goons quit                       " />
+	<stat Name="GBTELNOGOON_GIVTERMBOUN"  		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment=	"Boss/ Goon Telemetry: Number of Goons given Termination Bounties " />
+	<stat Name="GBTELNOGOON_SACKED"        		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment=	"Boss/ Goon Telemetry: Number of Goons sacked                     " />
+	<stat Name="GBTELTOTAL_TIME_BOSS"  			Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment=	"Boss/ Goon Telemetry: Destroying Boss's vehicle                  " />
+	<stat Name="GBTELTOTAL_TIME_GOON"  			Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment=	"Total time being a Goon" />
+	<stat Name="GB_LAST_TIME_AS_BOSS"  			Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment=	"Boss/ Goon Telemetry: Last time as boss                 " />
+	<stat Name="YACHT_SPAWN_ACCESS"  			Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment=	"YACHT_SPAWN_ACCESS          " />
+	
+	<stat Name="YACHT_NAME2"             		Type="string" SaveCategory="0"  online="true"  profile="false"  Owner="script" characterStat="true"  Comment="Stats for storing the flag, name, colour, base and mod of the players purchased yacht" />	
+	<stat Name="GB_GANG_NAME2"     			  	Type="string" SaveCategory="0"   online="true"  profile="false"    Owner="script"  characterStat="true"  Comment="players gang name" />
+	
+	<stat Name="BOSS_NEARBY_INVITE_COUNT"  		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment="Amount of invites sent to nearby players during this Boss period" />
+	<stat Name="BOSS_FRIEND_INVITE_COUNT"  		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment="Amount of invites sent to friends during this Boss period" />
+	<stat Name="BOSS_CREW_INVITE_COUNT"  		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment="Amount of invites sent to crew players during this Boss period" />
+	<stat Name="BOSS_IND_INVITE_COUNT"  		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment="Amount of invites sent to individual players during this Boss period" />
+	<stat Name="BOSS_LFW_INVITE_COUNT"  		Type="int"	  SaveCategory="0"   online="true"  profile="false"   Owner="script"  characterStat="true"  Comment="Amount of invites sent to looking for work players during this Boss period" />
+	
+	
+  </stats>
+</StatsSetup>
+
+	

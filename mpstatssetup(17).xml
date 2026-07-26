@@ -1,0 +1,15 @@
+<StatsSetup version="1">
+  <stats>
+  
+	<!-- VEHICLE WEAPONS -->
+ 	<stat Name="IGNUS2_MINI_KILLS"        	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"   FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed with weapon" />
+    <stat Name="IGNUS2_MINI_DEATHS"       	Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by weapon" />
+    <stat Name="IGNUS2_MINI_SHOTS"        	Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 fired weapon" />
+    <stat Name="IGNUS2_MINI_HITS"         	Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 hit with weapon" />
+    <stat Name="IGNUS2_MINI_HEADSHOTS"    	Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by headshot with weapon" />
+    <stat Name="IGNUS2_MINI_HELDTIME"     	Type="u32"  SaveCategory="1" Default="0" online="true" profile="true"   FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time mp char 0 held weapon (MS)" />
+	<stat Name="IGNUS2_MINI_ENEMY_KILLS"  	Type="int"  SaveCategory="1" Default="0" online="true" profile="false"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of enemies killed with weapon (S)" />	
+  </stats>
+</StatsSetup>
+
+	

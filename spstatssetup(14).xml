@@ -1,0 +1,24 @@
+<StatsSetup version="1">
+    <stats>
+
+		<!-- WEAPONS -->
+        <stat Name="HVYSHGN_KILLS"       	Type="int" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Number of times killed with weapon" />
+        <stat Name="HVYSHGN_DEATHS"      	Type="int" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Number of times killed by weapon" />
+        <stat Name="HVYSHGN_SHOTS"       	Type="int" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Number of times fired weapon" />
+        <stat Name="HVYSHGN_HITS"        	Type="int" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Number of times hit with weapon" />
+        <stat Name="HVYSHGN_HEADSHOTS"   	Type="int" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Number of times killed by headshot with weapon" />
+        <stat Name="HVYSHGN_HELDTIME"    	Type="u32" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Time held weapon (MS)" />
+		<stat Name="HVYSHGN_DB_HELDTIME" 	Type="u32" SaveCategory="0" Default="0"  online="false" profile="false" FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Time held drive by weapon (MS)" />
+        <stat Name="HVYSHGN_AMMO_BOUGHT" 	Type="int" SaveCategory="0" Default="0"  online="false" profile="false" FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script" characterStat="true"  Comment="Ammo bought for weapon" />						            
+
+        <stat Name="MKRIFLE_KILLS"       	Type="int" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Number of times killed with weapon" />
+        <stat Name="MKRIFLE_DEATHS"      	Type="int" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Number of times killed by weapon" />
+        <stat Name="MKRIFLE_SHOTS"       	Type="int" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Number of times fired weapon" />
+        <stat Name="MKRIFLE_HITS"        	Type="int" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Number of times hit with weapon" />
+        <stat Name="MKRIFLE_HEADSHOTS"   	Type="int" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Number of times killed by headshot with weapon" />
+        <stat Name="MKRIFLE_HELDTIME"    	Type="u32" SaveCategory="0" Default="0"  online="false" profile="true"  FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Time held weapon (MS)" />
+		<stat Name="MKRIFLE_DB_HELDTIME" 	Type="u32" SaveCategory="0" Default="0"  online="false" profile="false" FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"  characterStat="true"  Comment="Time held drive by weapon (MS)" />
+        <stat Name="MKRIFLE_AMMO_BOUGHT" 	Type="int" SaveCategory="0" Default="0"  online="false" profile="false" FlushPriority="0" ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script" characterStat="true"  Comment="Ammo bought for weapon" />						            
+		
+	</stats>
+</StatsSetup>

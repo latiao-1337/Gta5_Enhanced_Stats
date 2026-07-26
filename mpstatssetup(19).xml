@@ -1,0 +1,17 @@
+<StatsSetup version="1">
+  <stats>
+	
+	<!-- WEAPONS -->
+    <stat Name="FLASHLIGHT_KILLS"           	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed with weapon" />
+    <stat Name="FLASHLIGHT_DEATHS"          	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 killed by weapon" />
+    <stat Name="FLASHLIGHT_HITS"            	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of times mp char 0 hit with weapon" />
+    <stat Name="FLASHLIGHT_HELDTIME"        	Type="u32"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time mp char 0 held weapon (MS)" />
+    <stat Name="FLASHLIGHT_DB_HELDTIME"     	Type="u32"  SaveCategory="1" Default="0" online="true" profile="false" FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Time char0 held driveby weapon (MS)" />
+	<stat Name="FLASHLIGHT_FM_AMMO_BOUGHT"  	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+    <stat Name="FLASHLIGHT_FM_AMMO_CURRENT" 	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Ammo bought for weapon" />                                  
+	<stat Name="FLASHLIGHT_ENEMY_KILLS"     	Type="int"  SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="0"  ServerAuthoritative="false" community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="coder"   characterStat="true"  Comment="Number of enemies killed with weapon (S)" />
+	<stat Name="FLASHLIGHT_IN_POSSESSION"   	Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                  
+	<stat Name="FLASHLIGHT_AQUIRED_AS_GIFT"   	Type="bool" SaveCategory="1" Default="0" online="true" profile="true"  FlushPriority="15" ServerAuthoritative="true"  community="false" UserData="STAT_FLAG_NEVER_SHOW" Owner="script"  characterStat="true"  Comment="Is weapon in inventory" />                                  
+	
+	</stats>
+</StatsSetup>
